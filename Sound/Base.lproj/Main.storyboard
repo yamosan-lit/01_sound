@@ -26,10 +26,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fo8-mi-B2m">
-                                <rect key="frame" x="83" y="367" width="224" height="214"/>
+                                <rect key="frame" x="83" y="315" width="224" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="pianoImage"/>
+                                <connections>
+                                    <action selector="touchDownPianoButton" destination="BYZ-38-t0r" eventType="touchDown" id="qzf-mG-lwV"/>
+                                    <action selector="touchUpPianoButon" destination="BYZ-38-t0r" eventType="touchUpInside" id="0JS-8o-LAR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -37,6 +41,7 @@
                     </view>
                     <connections>
                         <outlet property="drumButton" destination="jka-jY-vTL" id="SIv-b6-Lfs"/>
+                        <outlet property="pianoButton" destination="Fo8-mi-B2m" id="Dss-17-0qM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
