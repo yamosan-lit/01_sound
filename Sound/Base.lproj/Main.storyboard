@@ -35,12 +35,23 @@
                                     <action selector="touchUpPianoButon" destination="BYZ-38-t0r" eventType="touchUpInside" id="0JS-8o-LAR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBL-Yh-ruM">
+                                <rect key="frame" x="83" y="555" width="224" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="guitarImage"/>
+                                <connections>
+                                    <action selector="touchDownGuitarButton" destination="BYZ-38-t0r" eventType="touchDown" id="f3E-ty-d4d"/>
+                                    <action selector="touchUpGuitarButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Crx-4S-Uox"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.98327551354895104" blue="0.94548159726016157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="drumButton" destination="jka-jY-vTL" id="SIv-b6-Lfs"/>
+                        <outlet property="guitarButton" destination="vBL-Yh-ruM" id="6P5-f9-gdf"/>
                         <outlet property="pianoButton" destination="Fo8-mi-B2m" id="Dss-17-0qM"/>
                     </connections>
                 </viewController>
@@ -51,6 +62,7 @@
     </scenes>
     <resources>
         <image name="drumImage" width="200" height="200"/>
+        <image name="guitarImage" width="200" height="200"/>
         <image name="pianoImage" width="200" height="200"/>
     </resources>
 </document>
